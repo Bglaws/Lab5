@@ -1,0 +1,27 @@
+function vote(arrow, postOrComment, id) {
+
+  // determine arrow types
+  var arrowDirection = arrow.classList.contains("up") ? "up" : "down";
+  var siblingDirection = arrowDirection === "up" ? "down" : "up";
+
+  fetch("/vote", {
+    method: "POST",
+    body: "type="+postOrComment+"&direction="+arrowDirection+"&id="+id
+  }).then(response => {
+    if (response.redirected) {
+      window.location.href = response.url;
+    }
+    else if (response.ok) {
+      toggleVote(arrow, postOrComment, id, arrowDirection, siblingDirection);
+    }
+    else {
+      console.log(response);
+      alert("Error");
+    }
+  });
+}
+
+make a button that returns a random row from the database
+use p tags to organize info stored in each column
+maybe doo a lil css
+

@@ -1,0 +1,41 @@
+
+body {
+	background-color: lightsteelblue;
+}
+
+h1 {
+	font-family: Monospace;
+	font-size: 30px;
+	color: steelblue;
+	border-style: solid;
+	text-align: center;
+	border: 15px solid steelblue;
+  	padding: 50px;
+  	margin-left: 150px;
+	margin-right: 150px;
+}
+
+h2 {
+	font-family: Monospace;
+	text-align: center;
+	color: steelblue;
+	padding-top: 50px;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-bottom: 50px;
+	
+}
+
+button {
+	background-color: azure;
+	color: royalblue;
+	border-radius: 10px;
+	border-color: cornflowerblue;
+}
+
+.buttonContainer {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	text-align: center;
+}
